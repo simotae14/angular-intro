@@ -1,6 +1,9 @@
 <p>
   {{ name }}
 </p>
+<p *ngIf="name != 'Simone'">
+  Nome aggiornato!
+</p>
 <button (click)="onChangeName()">
   Cambia nome
 </button>
