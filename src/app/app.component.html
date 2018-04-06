@@ -14,5 +14,6 @@
   <li
     *ngFor="let el of elements"
     [id]="'element' + el"
+    [ngStyle]="{ backgroundColor: getColor(el)}"
   >Elemento {{ el }}</li>
 </ul>

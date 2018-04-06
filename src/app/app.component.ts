@@ -17,4 +17,8 @@ export class AppComponent {
   onAddElement() {
     this.elements.push(this.elements.length + 1);
   }
+  // metodo per il recupero della classe
+  getColor(element) {
+    return element % 2 === 0 ? 'green' : 'red';
+  }
 }
