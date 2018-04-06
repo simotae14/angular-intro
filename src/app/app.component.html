@@ -1,4 +1,4 @@
-<p>
+<p [ngClass]="{ updated: name != 'Simone' }">
   {{ name }}
 </p>
 <p *ngIf="name != 'Simone'">
