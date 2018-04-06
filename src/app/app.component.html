@@ -11,5 +11,8 @@
   Nuovo elemento
 </button>
 <ul>
-  <li *ngFor="let el of elements">Elemento {{ el }}</li>
+  <li
+    *ngFor="let el of elements"
+    [id]="'element' + el"
+  >Elemento {{ el }}</li>
 </ul>
