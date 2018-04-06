@@ -7,3 +7,9 @@
 <button (click)="onChangeName()">
   Cambia nome
 </button>
+<button (click)="onAddElement()">
+  Nuovo elemento
+</button>
+<ul>
+  <li *ngFor="let el of elements">Elemento {{ el }}</li>
+</ul>

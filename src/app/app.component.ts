@@ -7,8 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Simone';
+  elements: number[] = [];
 
+  // metodo al click Cambia nome
   onChangeName() {
     this.name = 'Max';
+  }
+  // metodo al click Nuovo elemento
+  onAddElement() {
+    this.elements.push(this.elements.length + 1);
   }
 }
